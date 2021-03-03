@@ -17,6 +17,6 @@ config :rocketpay, Rocketpay.Repo,
 config :rocketpay, RocketpayWeb.Endpoint,
   http: [port: 4002],
   server: false
-
+  CREATE USER postgres SUPERUSER INHERIT CREATEDB CREATEROLE;
 # Print only warnings and errors during test
 config :logger, level: :warn
